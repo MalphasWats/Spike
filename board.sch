@@ -41,7 +41,7 @@ U 1 1 5BACA9FF
 P 8000 5200
 F 0 "U1" H 7650 4850 60  0000 L CNN
 F 1 "OLED" H 7650 4750 60  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x07_Pitch1.27mm" H 8000 5200 60  0001 C CNN
+F 2 "Custom Footprints:128x128_OLED" H 8000 5200 60  0001 C CNN
 F 3 "" H 8000 5200 60  0001 C CNN
 	1    8000 5200
 	1    0    0    -1  
@@ -248,13 +248,6 @@ F 3 "" H 1850 1250 50  0001 C CNN
 	1    1850 1250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2050 1500 1850 1500
-Wire Wire Line
-	1850 1500 1650 1500
-Connection ~ 1850 1500
-Wire Wire Line
-	1850 1400 1850 1500
 $Comp
 L power:+3.3V #PWR0101
 U 1 1 5BACE242
@@ -378,11 +371,11 @@ Text GLabel 6600 2300 2    50   Input ~ 0
 LEFT
 Text GLabel 6600 2400 2    50   Input ~ 0
 RIGHT
-Text GLabel 6600 2500 2    50   Input ~ 0
+Text GLabel 6600 2700 2    50   Input ~ 0
 BTN_A
 Text GLabel 6600 2600 2    50   Input ~ 0
 BTN_B
-Text GLabel 6600 2700 2    50   Input ~ 0
+Text GLabel 6600 2500 2    50   Input ~ 0
 BTN_C
 Wire Wire Line
 	6450 2100 6600 2100
@@ -492,7 +485,7 @@ Text GLabel 8200 4850 1    50   Input ~ 0
 D_DC
 Wire Wire Line
 	8200 4850 8200 5000
-Text GLabel 6600 3400 2    50   Input ~ 0
+Text GLabel 6600 3100 2    50   Input ~ 0
 D_DC
 Wire Wire Line
 	6450 3400 6600 3400
@@ -500,7 +493,7 @@ Text GLabel 8300 4850 1    50   Input ~ 0
 D_CS
 Wire Wire Line
 	8300 4850 8300 5000
-Text GLabel 6600 3300 2    50   Input ~ 0
+Text GLabel 6600 3000 2    50   Input ~ 0
 D_CS
 Wire Wire Line
 	6450 3300 6600 3300
@@ -532,13 +525,13 @@ Wire Wire Line
 	7500 5250 7500 5000
 Wire Wire Line
 	7500 5000 7700 5000
-Text GLabel 6600 3000 2    50   Input ~ 0
+Text GLabel 6600 3400 2    50   Input ~ 0
 D_SCK
 Wire Wire Line
 	6450 3000 6600 3000
 Text GLabel 7900 4850 1    50   Input ~ 0
 D_SCK
-Text GLabel 6600 3100 2    50   Input ~ 0
+Text GLabel 6600 3300 2    50   Input ~ 0
 D_MOSI
 Wire Wire Line
 	6450 3100 6600 3100
@@ -664,10 +657,6 @@ F 3 "" H 3750 2000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3750 1850 3750 1950
-Wire Wire Line
-	3250 1400 3250 1550
-Wire Wire Line
-	3250 1550 3450 1550
 $Comp
 L Custom~Library:C C2
 U 1 1 5BB08370
@@ -679,7 +668,6 @@ F 3 "" H 3250 1700 50  0001 C CNN
 	1    3250 1700
 	1    0    0    -1  
 $EndComp
-Connection ~ 3250 1550
 Wire Wire Line
 	3250 1850 3250 1950
 Wire Wire Line
@@ -805,13 +793,6 @@ $EndComp
 Wire Wire Line
 	9150 1300 8350 1300
 Connection ~ 8350 1300
-Wire Wire Line
-	8350 1600 8850 1600
-Wire Wire Line
-	8850 1600 8850 1500
-Wire Wire Line
-	8850 1500 9150 1500
-Connection ~ 8350 1600
 $Comp
 L power:GND #PWR017
 U 1 1 5BB1BF83
@@ -912,10 +893,10 @@ F 3 "" H 1450 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Custom~Library:SW_DPST_x2 SW1
+L Custom~Library:SW_DPST_x2 SW8
 U 1 1 5BB38E19
 P 3250 1200
-F 0 "SW1" V 3296 1112 50  0000 R CNN
+F 0 "SW8" V 3296 1112 50  0000 R CNN
 F 1 "POWER" V 3205 1112 50  0000 R CNN
 F 2 "Buttons_Switches_SMD:SW_DIP_x1_W8.61mm_Slide_LowProfile" H 3250 1200 50  0001 C CNN
 F 3 "" H 3250 1200 50  0001 C CNN
@@ -927,10 +908,10 @@ Wire Wire Line
 Wire Wire Line
 	1150 4000 1150 4700
 $Comp
-L Switch:SW_Push SW2
+L Switch:SW_Push SW1
 U 1 1 5BB3920E
 P 1350 2200
-F 0 "SW2" H 1350 2485 50  0000 C CNN
+F 0 "SW1" H 1350 2485 50  0000 C CNN
 F 1 "UP" H 1350 2394 50  0000 C CNN
 F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 1350 2400 50  0001 C CNN
 F 3 "" H 1350 2400 50  0001 C CNN
@@ -938,10 +919,10 @@ F 3 "" H 1350 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW3
+L Switch:SW_Push SW2
 U 1 1 5BB3926A
 P 1350 2800
-F 0 "SW3" H 1350 3085 50  0000 C CNN
+F 0 "SW2" H 1350 3085 50  0000 C CNN
 F 1 "DOWN" H 1350 2994 50  0000 C CNN
 F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 1350 3000 50  0001 C CNN
 F 3 "" H 1350 3000 50  0001 C CNN
@@ -952,10 +933,10 @@ Connection ~ 1150 2800
 Wire Wire Line
 	1150 2800 1150 3400
 $Comp
-L Switch:SW_Push SW4
+L Switch:SW_Push SW3
 U 1 1 5BB392C2
 P 1350 3400
-F 0 "SW4" H 1350 3685 50  0000 C CNN
+F 0 "SW3" H 1350 3685 50  0000 C CNN
 F 1 "LEFT" H 1350 3594 50  0000 C CNN
 F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 1350 3600 50  0001 C CNN
 F 3 "" H 1350 3600 50  0001 C CNN
@@ -966,10 +947,10 @@ Connection ~ 1150 3400
 Wire Wire Line
 	1150 3400 1150 4000
 $Comp
-L Switch:SW_Push SW5
+L Switch:SW_Push SW4
 U 1 1 5BB39320
 P 1350 4000
-F 0 "SW5" H 1350 4285 50  0000 C CNN
+F 0 "SW4" H 1350 4285 50  0000 C CNN
 F 1 "RIGHT" H 1350 4194 50  0000 C CNN
 F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 1350 4200 50  0001 C CNN
 F 3 "" H 1350 4200 50  0001 C CNN
@@ -977,10 +958,10 @@ F 3 "" H 1350 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW6
+L Switch:SW_Push SW5
 U 1 1 5BB3937A
 P 1350 4700
-F 0 "SW6" H 1350 4985 50  0000 C CNN
+F 0 "SW5" H 1350 4985 50  0000 C CNN
 F 1 "BTN_A" H 1350 4894 50  0000 C CNN
 F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 1350 4900 50  0001 C CNN
 F 3 "" H 1350 4900 50  0001 C CNN
@@ -991,10 +972,10 @@ Connection ~ 1150 4700
 Wire Wire Line
 	1150 4700 1150 5300
 $Comp
-L Switch:SW_Push SW7
+L Switch:SW_Push SW6
 U 1 1 5BB393E2
 P 1350 5300
-F 0 "SW7" H 1350 5585 50  0000 C CNN
+F 0 "SW6" H 1350 5585 50  0000 C CNN
 F 1 "BTN_B" H 1350 5494 50  0000 C CNN
 F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 1350 5500 50  0001 C CNN
 F 3 "" H 1350 5500 50  0001 C CNN
@@ -1005,10 +986,10 @@ Connection ~ 1150 5300
 Wire Wire Line
 	1150 5300 1150 5900
 $Comp
-L Switch:SW_Push SW8
+L Switch:SW_Push SW7
 U 1 1 5BB39448
 P 1350 5900
-F 0 "SW8" H 1350 6185 50  0000 C CNN
+F 0 "SW7" H 1350 6185 50  0000 C CNN
 F 1 "BTN_C" H 1350 6094 50  0000 C CNN
 F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 1350 6100 50  0001 C CNN
 F 3 "" H 1350 6100 50  0001 C CNN
@@ -1030,4 +1011,86 @@ Wire Wire Line
 	2800 2300 2550 2300
 Wire Wire Line
 	2550 2300 2550 2450
+Text GLabel 9150 1600 0    50   Input ~ 0
+SD_MISO
+Text GLabel 9150 1200 0    50   Input ~ 0
+SD_MOSI
+Wire Wire Line
+	8350 1600 8650 1600
+Wire Wire Line
+	8650 1600 8650 1500
+Wire Wire Line
+	8650 1500 9150 1500
+Connection ~ 8350 1600
+Text GLabel 9150 1400 0    50   Input ~ 0
+SD_SCK
+Text GLabel 9150 1100 0    50   Input ~ 0
+SD_CS
+Text GLabel 9150 1800 0    50   Input ~ 0
+SD_DETECT
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5BAE7783
+P 8900 2150
+F 0 "#PWR0103" H 8900 2000 50  0001 C CNN
+F 1 "+3.3V" H 8915 2323 50  0000 C CNN
+F 2 "" H 8900 2150 50  0001 C CNN
+F 3 "" H 8900 2150 50  0001 C CNN
+	1    8900 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1900 9150 2150
+Wire Wire Line
+	9150 2150 8900 2150
+$Comp
+L power:GND #PWR0104
+U 1 1 5BAED575
+P 8650 1000
+F 0 "#PWR0104" H 8650 750 50  0001 C CNN
+F 1 "GND" H 8655 827 50  0000 C CNN
+F 2 "" H 8650 1000 50  0001 C CNN
+F 3 "" H 8650 1000 50  0001 C CNN
+	1    8650 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 1000 9150 1000
+Wire Wire Line
+	9150 1700 8650 1700
+Wire Wire Line
+	8650 1700 8650 1600
+Connection ~ 8650 1600
+Text GLabel 6600 4200 2    50   Input ~ 0
+SD_CS
+Text GLabel 6600 3900 2    50   Input ~ 0
+SD_SCK
+Text GLabel 6600 4000 2    50   Input ~ 0
+SD_MOSI
+Text GLabel 6600 4100 2    50   Input ~ 0
+SD_MISO
+Text GLabel 6600 4300 2    50   Input ~ 0
+SD_DETECT
+Wire Wire Line
+	6450 3900 6600 3900
+Wire Wire Line
+	6450 4000 6600 4000
+Wire Wire Line
+	6450 4100 6600 4100
+Wire Wire Line
+	6450 4200 6600 4200
+Wire Wire Line
+	6450 4300 6600 4300
+Wire Wire Line
+	2050 1500 1850 1500
+Wire Wire Line
+	1850 1400 1850 1500
+Connection ~ 1850 1500
+Wire Wire Line
+	1850 1500 1650 1500
+Wire Wire Line
+	3250 1400 3250 1550
+Wire Wire Line
+	3450 1550 3250 1550
+Connection ~ 3250 1550
 $EndSCHEMATC
