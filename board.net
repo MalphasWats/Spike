@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Git\Spike\board.sch)
-    (date "09/10/2018 11:14:29")
+    (date "09/10/2018 12:47:17")
     (tool "Eeschema (5.0.0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -234,7 +234,7 @@
       (tstamp 5BB3D25D))
     (comp (ref Y1)
       (value 16MHz)
-      (footprint Crystals:Crystal_SMD_7050-4pin_7.0x5.0mm)
+      (footprint Crystals:Crystal_SMD_5032-2pin_5.0x3.2mm)
       (datasheet ~)
       (libsource (lib Device) (part Crystal_Small) (description "Two pin crystal, small symbol"))
       (sheetpath (names /) (tstamps /))

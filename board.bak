@@ -431,7 +431,7 @@ L Connector:Micro_SD_Card_Det J2
 U 1 1 5BAD946C
 P 10050 1400
 F 0 "J2" H 10000 2217 50  0000 C CNN
-F 1 "Micro SD Card" H 10000 2126 50  0000 C CNN
+F 1 "Micro SD Slot" H 10000 2126 50  0000 C CNN
 F 2 "Connectors_Card:Hirose_DM3AT-SF-PEJM5" H 12100 2100 50  0001 C CNN
 F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 10050 1500 50  0001 C CNN
 	1    10050 1400
@@ -1128,7 +1128,7 @@ U 1 1 5BBCEB00
 P 5000 2400
 F 0 "Y1" V 4954 2312 50  0000 R CNN
 F 1 "16MHz" V 5045 2312 50  0000 R CNN
-F 2 "Crystals:Crystal_SMD_7050-4pin_7.0x5.0mm" H 5000 2400 50  0001 C CNN
+F 2 "Crystals:Crystal_SMD_SeikoEpson_MA505-2pin_12.7x5.1mm" H 5000 2400 50  0001 C CNN
 F 3 "~" H 5000 2400 50  0001 C CNN
 	1    5000 2400
 	0    -1   1    0   
