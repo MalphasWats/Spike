@@ -18,7 +18,7 @@ L MCU_Microchip_ATmega:ATmega1284P-AU U0
 U 1 1 5BAC9BF3
 P 5850 3800
 F 0 "U0" H 5350 5750 50  0000 L BNN
-F 1 "ATmega1284P-AU" H 5950 1850 50  0000 L TNN
+F 1 "ATmega1284P" H 5950 1850 50  0000 L TNN
 F 2 "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm" H 5850 3800 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8272-8-bit-AVR-microcontroller-ATmega164A_PA-324A_PA-644A_PA-1284_P_datasheet.pdf" H 5850 3800 50  0001 C CNN
 	1    5850 3800
@@ -62,7 +62,7 @@ L Connector:AVR-ISP-6 J1
 U 1 1 5BACB582
 P 10050 3200
 F 0 "J1" V 9850 3450 50  0000 C CNN
-F 1 "AVR-ISP-6" V 9700 3250 50  0000 C CNN
+F 1 "PGRM" V 9700 3250 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch1.27mm" V 9800 3250 50  0001 C CNN
 F 3 " ~" H 8775 2650 50  0001 C CNN
 	1    10050 3200
@@ -431,7 +431,7 @@ L Connector:Micro_SD_Card_Det J2
 U 1 1 5BAD946C
 P 10050 1400
 F 0 "J2" H 10000 2217 50  0000 C CNN
-F 1 "Micro_SD_Card_Det" H 10000 2126 50  0000 C CNN
+F 1 "Micro SD Slot" H 10000 2126 50  0000 C CNN
 F 2 "Connectors_Card:Hirose_DM3AT-SF-PEJM5" H 12100 2100 50  0001 C CNN
 F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 10050 1500 50  0001 C CNN
 	1    10050 1400
@@ -638,7 +638,7 @@ L Regulator_Linear:APE8865N-33-HF-3 U3
 U 1 1 5BB03D8F
 P 3750 1550
 F 0 "U3" H 3750 1792 50  0000 C CNN
-F 1 "AP7333" H 3750 1701 50  0000 C CNN
+F 1 "Reg" H 3750 1701 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 3750 1775 50  0001 C CIN
 F 3 "http://www.tme.eu/fr/Document/ced3461ed31ea70a3c416fb648e0cde7/APE8865-3.pdf" H 3750 1550 50  0001 C CNN
 	1    3750 1550
@@ -735,7 +735,7 @@ L Battery_Management:MCP73831-2-OT U2
 U 1 1 5BB0F744
 P 3500 3450
 F 0 "U2" H 3500 3928 50  0000 C CNN
-F 1 "MCP73831-2-OT" H 3500 3837 50  0000 C CNN
+F 1 "CHG" H 3500 3837 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 3550 3200 50  0001 L CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 3350 3400 50  0001 C CNN
 	1    3500 3450
