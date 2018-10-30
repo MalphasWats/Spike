@@ -172,8 +172,4 @@ Text GLabel 6550 3700 2    50   Input ~ 0
 D+
 Text GLabel 6550 3600 2    50   Input ~ 0
 D-
-Wire Wire Line
-	6500 3600 6550 3600
-Wire Wire Line
-	6500 3700 6550 3700
 $EndSCHEMATC
