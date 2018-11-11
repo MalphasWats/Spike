@@ -30,7 +30,7 @@ L Device:C C0
 U 1 1 5BE6947B
 P 7800 3050
 F 0 "C0" H 7915 3096 50  0000 L CNN
-F 1 "0.1uF" H 7915 3005 50  0000 L CNN
+F 1 "104" H 7915 3005 50  0000 L CNN
 F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 7838 2900 50  0001 C CNN
 F 3 "~" H 7800 3050 50  0001 C CNN
 	1    7800 3050
@@ -48,17 +48,6 @@ F 3 "" H 5750 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0102
-U 1 1 5BE69B29
-P 6500 3800
-F 0 "#PWR0102" H 6500 3550 50  0001 C CNN
-F 1 "GND" H 6505 3627 50  0000 C CNN
-F 2 "" H 6500 3800 50  0001 C CNN
-F 3 "" H 6500 3800 50  0001 C CNN
-	1    6500 3800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0103
 U 1 1 5BE69CAB
 P 7800 3350
@@ -70,68 +59,38 @@ F 3 "" H 7800 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 3700 6500 3700
-Wire Wire Line
-	6500 3700 6500 3800
-Wire Wire Line
-	6400 3600 6500 3600
-Wire Wire Line
-	6500 3600 6500 3700
-Connection ~ 6500 3700
-Wire Wire Line
-	6400 3500 6500 3500
-Wire Wire Line
-	6500 3500 6500 3600
-Connection ~ 6500 3600
-Wire Wire Line
-	6400 3400 6500 3400
-Wire Wire Line
-	6500 3400 6500 3500
-Connection ~ 6500 3500
-Wire Wire Line
-	6400 3300 6500 3300
-Wire Wire Line
-	6500 3300 6500 3400
-Connection ~ 6500 3400
-Wire Wire Line
 	5750 2750 5750 2800
 Wire Wire Line
 	5750 2800 5900 2800
-Text GLabel 7050 2800 2    50   Input ~ 0
+Text GLabel 7200 3100 2    50   Input ~ 0
 D_CS
-Text GLabel 6550 2900 2    50   Input ~ 0
-D_DC
-Text GLabel 6550 3000 2    50   Input ~ 0
-D_RST
-Text GLabel 6550 3100 2    50   Input ~ 0
-D_MOSI
 Text GLabel 6550 3200 2    50   Input ~ 0
+D_DC
+Text GLabel 6550 3300 2    50   Input ~ 0
+D_RST
+Text GLabel 6550 3400 2    50   Input ~ 0
+D_MOSI
+Text GLabel 6550 3500 2    50   Input ~ 0
 D_SCK
 Wire Wire Line
-	6400 2900 6550 2900
-Wire Wire Line
-	6400 3000 6550 3000
-Wire Wire Line
-	6400 3100 6550 3100
-Wire Wire Line
 	6400 3200 6550 3200
-Text GLabel 5750 2900 0    50   Input ~ 0
-UP
-Text GLabel 5750 3000 0    50   Input ~ 0
-DOWN
-Text GLabel 5750 3100 0    50   Input ~ 0
-LEFT
-Text GLabel 5750 3200 0    50   Input ~ 0
-RIGHT
 Text GLabel 5750 3300 0    50   Input ~ 0
-SND
-Text GLabel 5750 3400 0    50   Input ~ 0
-RESET
-Text GLabel 5750 3500 0    50   Input ~ 0
-BTN_C
+UP
 Text GLabel 5750 3600 0    50   Input ~ 0
+DOWN
+Text GLabel 5750 3500 0    50   Input ~ 0
+LEFT
+Text GLabel 5750 3400 0    50   Input ~ 0
+RIGHT
+Text GLabel 6550 3600 2    50   Input ~ 0
+SND
+Text GLabel 5750 3200 0    50   Input ~ 0
+RESET
+Text GLabel 5750 3100 0    50   Input ~ 0
+BTN_C
+Text GLabel 5750 3000 0    50   Input ~ 0
 BTN_B
-Text GLabel 5750 3700 0    50   Input ~ 0
+Text GLabel 5750 2900 0    50   Input ~ 0
 BTN_A
 Wire Wire Line
 	5750 2900 5900 2900
@@ -166,9 +125,9 @@ Wire Wire Line
 	7800 2750 7800 2900
 Wire Wire Line
 	7800 3200 7800 3350
-Text GLabel 6550 3700 2    50   Input ~ 0
+Text GLabel 7200 3000 2    50   Input ~ 0
 D+
-Text GLabel 6550 3600 2    50   Input ~ 0
+Text GLabel 7200 2900 2    50   Input ~ 0
 D-
 $Comp
 L power:+3.3V #PWR0105
@@ -192,13 +151,13 @@ F 3 "" H 3000 3900 50  0001 C CNN
 	1    3000 3900
 	1    0    0    -1  
 $EndComp
-Text GLabel 3750 2200 2    50   Input ~ 0
-UP
-Text GLabel 3750 2300 2    50   Input ~ 0
-DOWN
-Text GLabel 3750 2400 2    50   Input ~ 0
-LEFT
 Text GLabel 3750 2500 2    50   Input ~ 0
+UP
+Text GLabel 3750 2200 2    50   Input ~ 0
+DOWN
+Text GLabel 3750 2300 2    50   Input ~ 0
+LEFT
+Text GLabel 3750 2400 2    50   Input ~ 0
 RIGHT
 Text GLabel 3750 3100 2    50   Input ~ 0
 BTN_C
@@ -295,12 +254,12 @@ $EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 5BEE8E9F
-P 6950 2800
-F 0 "#PWR01" H 6950 2550 50  0001 C CNN
-F 1 "GND" H 6955 2627 50  0000 C CNN
-F 2 "" H 6950 2800 50  0001 C CNN
-F 3 "" H 6950 2800 50  0001 C CNN
-	1    6950 2800
+P 6950 3100
+F 0 "#PWR01" H 6950 2850 50  0001 C CNN
+F 1 "GND" H 6955 2927 50  0000 C CNN
+F 2 "" H 6950 3100 50  0001 C CNN
+F 3 "" H 6950 3100 50  0001 C CNN
+	1    6950 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -347,7 +306,7 @@ L Device:C C1
 U 1 1 5BEFC4AD
 P 6350 2100
 F 0 "C1" V 6098 2100 50  0000 C CNN
-F 1 "1.0uF" V 6189 2100 50  0000 C CNN
+F 1 "104" V 6189 2100 50  0000 C CNN
 F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 6388 1950 50  0001 C CNN
 F 3 "~" H 6350 2100 50  0001 C CNN
 	1    6350 2100
@@ -413,4 +372,53 @@ Wire Wire Line
 Connection ~ 6850 1400
 Wire Wire Line
 	6400 2800 6950 2800
+$Comp
+L power:GND #PWR0102
+U 1 1 5BE9B3E3
+P 5750 3800
+F 0 "#PWR0102" H 5750 3550 50  0001 C CNN
+F 1 "GND" H 5755 3627 50  0000 C CNN
+F 2 "" H 5750 3800 50  0001 C CNN
+F 3 "" H 5750 3800 50  0001 C CNN
+	1    5750 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3700 5750 3800
+$Comp
+L power:+3.3V #PWR0109
+U 1 1 5BEA0F6B
+P 6950 3700
+F 0 "#PWR0109" H 6950 3550 50  0001 C CNN
+F 1 "+3.3V" H 6965 3873 50  0000 C CNN
+F 2 "" H 6950 3700 50  0001 C CNN
+F 3 "" H 6950 3700 50  0001 C CNN
+	1    6950 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3700 6950 3700
+Wire Wire Line
+	6550 3600 6400 3600
+Wire Wire Line
+	6400 3100 6950 3100
+Wire Wire Line
+	6950 3000 6950 3100
+Wire Wire Line
+	6400 3000 6950 3000
+Connection ~ 6950 3100
+Wire Wire Line
+	6950 2900 6950 3000
+Wire Wire Line
+	6400 2900 6950 2900
+Connection ~ 6950 3000
+Wire Wire Line
+	6950 2800 6950 2900
+Connection ~ 6950 2900
+Wire Wire Line
+	6400 3300 6550 3300
+Wire Wire Line
+	6400 3400 6550 3400
+Wire Wire Line
+	6400 3500 6550 3500
 $EndSCHEMATC
