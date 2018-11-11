@@ -36,17 +36,6 @@ F 3 "" H 5900 4500 60  0001 C CNN
 	1    5900 4500
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR01
-U 1 1 5BACB3A5
-P 700 4000
-F 0 "#PWR01" H 700 3850 50  0001 C CNN
-F 1 "+3.3V" H 715 4173 50  0000 C CNN
-F 2 "" H 700 4000 50  0001 C CNN
-F 3 "" H 700 4000 50  0001 C CNN
-	1    700  4000
-	1    0    0    -1  
-$EndComp
 Connection ~ 1150 4000
 $Comp
 L Device:R R0
@@ -756,4 +745,15 @@ Wire Wire Line
 	6100 2800 6250 2800
 Wire Wire Line
 	6100 2900 6250 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5BEB806B
+P 700 4000
+F 0 "#PWR?" H 700 3750 50  0001 C CNN
+F 1 "GND" H 705 3827 50  0000 C CNN
+F 2 "" H 700 4000 50  0001 C CNN
+F 3 "" H 700 4000 50  0001 C CNN
+	1    700  4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
