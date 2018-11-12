@@ -36,17 +36,6 @@ F 3 "" H 5900 4500 60  0001 C CNN
 	1    5900 4500
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR01
-U 1 1 5BACB3A5
-P 700 4000
-F 0 "#PWR01" H 700 3850 50  0001 C CNN
-F 1 "+3.3V" H 715 4173 50  0000 C CNN
-F 2 "" H 700 4000 50  0001 C CNN
-F 3 "" H 700 4000 50  0001 C CNN
-	1    700  4000
-	1    0    0    -1  
-$EndComp
 Connection ~ 1150 4000
 $Comp
 L Device:R R0
@@ -76,32 +65,32 @@ Wire Wire Line
 	1150 1500 1250 1500
 Text GLabel 2050 1500 2    50   Input ~ 0
 RESET
-Text GLabel 5450 2600 0    50   Input ~ 0
+Text GLabel 7400 2300 2    50   Input ~ 0
 RESET
 $Comp
 L power:+3.3V #PWR022
 U 1 1 5BAD1FC0
-P 5450 2200
-F 0 "#PWR022" H 5450 2050 50  0001 C CNN
-F 1 "+3.3V" H 5465 2373 50  0000 C CNN
-F 2 "" H 5450 2200 50  0001 C CNN
-F 3 "" H 5450 2200 50  0001 C CNN
-	1    5450 2200
+P 7400 1550
+F 0 "#PWR022" H 7400 1400 50  0001 C CNN
+F 1 "+3.3V" H 7415 1723 50  0000 C CNN
+F 2 "" H 7400 1550 50  0001 C CNN
+F 3 "" H 7400 1550 50  0001 C CNN
+	1    7400 1550
 	1    0    0    -1  
 $EndComp
-Text GLabel 5450 2700 0    50   Input ~ 0
+Text GLabel 7400 3000 2    50   Input ~ 0
 UP
-Text GLabel 5450 3000 0    50   Input ~ 0
+Text GLabel 7400 3100 2    50   Input ~ 0
 DOWN
-Text GLabel 5450 2900 0    50   Input ~ 0
+Text GLabel 7400 3200 2    50   Input ~ 0
 LEFT
-Text GLabel 5450 2800 0    50   Input ~ 0
+Text GLabel 7400 3300 2    50   Input ~ 0
 RIGHT
-Text GLabel 5450 2300 0    50   Input ~ 0
+Text GLabel 7400 1900 2    50   Input ~ 0
 BTN_A
-Text GLabel 5450 2400 0    50   Input ~ 0
+Text GLabel 7400 2000 2    50   Input ~ 0
 BTN_B
-Text GLabel 5450 2500 0    50   Input ~ 0
+Text GLabel 7400 2100 2    50   Input ~ 0
 BTN_C
 Text GLabel 2100 2200 2    50   Input ~ 0
 UP
@@ -145,7 +134,7 @@ Wire Wire Line
 	1950 7050 2050 7050
 Text GLabel 2150 6950 2    50   Input ~ 0
 SND
-Text GLabel 6250 3000 2    50   Input ~ 0
+Text GLabel 7400 3400 2    50   Input ~ 0
 SND
 Wire Wire Line
 	5800 4150 5800 4300
@@ -155,19 +144,19 @@ Text GLabel 6000 4150 1    50   Input ~ 0
 D_RST
 Wire Wire Line
 	6000 4150 6000 4300
-Text GLabel 6250 2700 2    50   Input ~ 0
+Text GLabel 7400 2700 2    50   Input ~ 0
 D_RST
 Text GLabel 6100 4150 1    50   Input ~ 0
 D_DC
 Wire Wire Line
 	6100 4150 6100 4300
-Text GLabel 6250 2600 2    50   Input ~ 0
+Text GLabel 7400 2600 2    50   Input ~ 0
 D_DC
 Text GLabel 6200 4150 1    50   Input ~ 0
 D_CS
 Wire Wire Line
 	6200 4150 6200 4300
-Text GLabel 6250 2500 2    50   Input ~ 0
+Text GLabel 7400 2500 2    50   Input ~ 0
 D_CS
 $Comp
 L power:+3.3V #PWR025
@@ -195,11 +184,11 @@ Wire Wire Line
 	5400 4550 5400 4300
 Wire Wire Line
 	5400 4300 5600 4300
-Text GLabel 6250 2900 2    50   Input ~ 0
+Text GLabel 7400 2900 2    50   Input ~ 0
 D_SCK
 Text GLabel 5800 4150 1    50   Input ~ 0
 D_SCK
-Text GLabel 6250 2800 2    50   Input ~ 0
+Text GLabel 7400 2800 2    50   Input ~ 0
 D_MOSI
 Text GLabel 5900 4150 1    50   Input ~ 0
 D_MOSI
@@ -609,45 +598,12 @@ Wire Wire Line
 	3850 5600 4000 5600
 Wire Wire Line
 	3850 5500 4000 5500
-Text GLabel 6250 2400 2    50   Input ~ 0
+Text GLabel 7400 1800 2    50   Input ~ 0
 D+
-Text GLabel 6250 2300 2    50   Input ~ 0
+Text GLabel 7400 1700 2    50   Input ~ 0
 D-
-$Comp
-L Connector_Generic:Conn_02x10_Odd_Even J1
-U 1 1 5BD94B77
-P 5800 2600
-F 0 "J1" H 5850 3217 50  0000 C CNN
-F 1 "Shard" H 5850 3126 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 5800 2600 50  0001 C CNN
-F 3 "~" H 5800 2600 50  0001 C CNN
-	1    5800 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2050 7050 2050 7250
-Wire Wire Line
-	5450 2200 5600 2200
-Wire Wire Line
-	5450 2300 5600 2300
-Wire Wire Line
-	5450 2400 5600 2400
-Wire Wire Line
-	5600 2500 5450 2500
-Wire Wire Line
-	5450 2600 5600 2600
-Wire Wire Line
-	5450 2800 5600 2800
-Wire Wire Line
-	5450 2900 5600 2900
-Wire Wire Line
-	6100 2300 6250 2300
-Wire Wire Line
-	6100 2400 6250 2400
-Wire Wire Line
-	6100 2500 6250 2500
-Wire Wire Line
-	6100 2600 6250 2600
 $Comp
 L power:+3.3V #PWR0101
 U 1 1 5BE037BD
@@ -661,23 +617,6 @@ F 3 "" H 1850 950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 950  1850 1100
-$Comp
-L power:GND #PWR0103
-U 1 1 5BE149B1
-P 6650 2200
-F 0 "#PWR0103" H 6650 1950 50  0001 C CNN
-F 1 "GND" H 6655 2027 50  0000 C CNN
-F 2 "" H 6650 2200 50  0001 C CNN
-F 3 "" H 6650 2200 50  0001 C CNN
-	1    6650 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 3000 5600 3000
-Wire Wire Line
-	6100 3000 6250 3000
-Wire Wire Line
-	5450 2700 5600 2700
 Wire Wire Line
 	1950 6950 2150 6950
 $Comp
@@ -722,38 +661,77 @@ Wire Wire Line
 	1550 5300 2100 5300
 Wire Wire Line
 	1550 5900 2100 5900
-Wire Wire Line
-	6100 2700 6250 2700
 $Comp
 L power:GND #PWR0104
-U 1 1 5BECACC3
-P 5350 3100
-F 0 "#PWR0104" H 5350 2850 50  0001 C CNN
-F 1 "GND" H 5355 2927 50  0000 C CNN
-F 2 "" H 5350 3100 50  0001 C CNN
-F 3 "" H 5350 3100 50  0001 C CNN
-	1    5350 3100
+U 1 1 5BEB806B
+P 700 4000
+F 0 "#PWR0104" H 700 3750 50  0001 C CNN
+F 1 "GND" H 705 3827 50  0000 C CNN
+F 2 "" H 700 4000 50  0001 C CNN
+F 3 "" H 700 4000 50  0001 C CNN
+	1    700  4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5350 3100 5600 3100
-Wire Wire Line
-	6100 2200 6650 2200
 $Comp
-L power:+3.3V #PWR0105
-U 1 1 5BECFF14
-P 6600 3100
-F 0 "#PWR0105" H 6600 2950 50  0001 C CNN
-F 1 "+3.3V" H 6615 3273 50  0000 C CNN
-F 2 "" H 6600 3100 50  0001 C CNN
-F 3 "" H 6600 3100 50  0001 C CNN
-	1    6600 3100
+L Connector_Generic:Conn_02x20_Odd_Even J1
+U 1 1 5BE9C917
+P 6950 2500
+F 0 "J1" H 7000 3617 50  0000 C CNN
+F 1 "Shard" H 7000 3526 50  0000 C CNN
+F 2 "Connector_PCBEdge:Samtec_MECF-20-01-NP-L-DV-WT_2x20_P1.27mm_Socket_Horizontal" H 6950 2500 50  0001 C CNN
+F 3 "~" H 6950 2500 50  0001 C CNN
+	1    6950 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5BE149B1
+P 7400 3550
+F 0 "#PWR0103" H 7400 3300 50  0001 C CNN
+F 1 "GND" H 7405 3377 50  0000 C CNN
+F 2 "" H 7400 3550 50  0001 C CNN
+F 3 "" H 7400 3550 50  0001 C CNN
+	1    7400 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 3100 6600 3100
+	7250 1600 7400 1600
 Wire Wire Line
-	6100 2800 6250 2800
+	7400 1600 7400 1550
 Wire Wire Line
-	6100 2900 6250 2900
+	7400 1700 7250 1700
+Wire Wire Line
+	7400 1800 7250 1800
+Wire Wire Line
+	7250 1900 7400 1900
+Wire Wire Line
+	7400 2000 7250 2000
+Wire Wire Line
+	7250 2100 7400 2100
+Wire Wire Line
+	7400 2300 7250 2300
+Wire Wire Line
+	7400 2500 7250 2500
+Wire Wire Line
+	7400 2600 7250 2600
+Wire Wire Line
+	7250 2700 7400 2700
+Wire Wire Line
+	7400 2800 7250 2800
+Wire Wire Line
+	7250 2900 7400 2900
+Wire Wire Line
+	7400 3000 7250 3000
+Wire Wire Line
+	7250 3100 7400 3100
+Wire Wire Line
+	7400 3200 7250 3200
+Wire Wire Line
+	7250 3300 7400 3300
+Wire Wire Line
+	7400 3400 7250 3400
+Wire Wire Line
+	7250 3500 7400 3500
+Wire Wire Line
+	7400 3500 7400 3550
 $EndSCHEMATC
