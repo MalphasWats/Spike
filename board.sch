@@ -678,7 +678,7 @@ U 1 1 5BE9C917
 P 6950 2500
 F 0 "J1" H 7000 3617 50  0000 C CNN
 F 1 "Shard" H 7000 3526 50  0000 C CNN
-F 2 "Connector_PCBEdge:Samtec_MECF-20-01-NP-L-DV-WT_2x20_P1.27mm_Socket_Horizontal" H 6950 2500 50  0001 C CNN
+F 2 "Custom Footprints:Samtec_MEC8-120-02-L-D-RA1_Socket" H 6950 2500 50  0001 C CNN
 F 3 "~" H 6950 2500 50  0001 C CNN
 	1    6950 2500
 	1    0    0    -1  

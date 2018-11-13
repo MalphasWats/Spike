@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/mikewatts/Projects/Spike/board.sch)
-    (date "Monday, 12 November 2018 at 15:44:40")
+    (date "Tuesday, 13 November 2018 at 10:13:37")
     (tool "Eeschema (5.0.1-3-g963ef8bb5)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -166,7 +166,7 @@
       (tstamp 5BE8C80D))
     (comp (ref J1)
       (value Shard)
-      (footprint Connector_PCBEdge:Samtec_MECF-20-01-NP-L-DV-WT_2x20_P1.27mm_Socket_Horizontal)
+      (footprint "Custom Footprints:Samtec_MEC8-120-02-L-D-RA1_Socket")
       (datasheet ~)
       (libsource (lib Connector_Generic) (part Conn_02x20_Odd_Even) (description "Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))

@@ -78,13 +78,13 @@ F 3 "" H 7400 1550 50  0001 C CNN
 	1    7400 1550
 	1    0    0    -1  
 $EndComp
-Text GLabel 7400 3000 2    50   Input ~ 0
-UP
 Text GLabel 7400 3100 2    50   Input ~ 0
-DOWN
+UP
 Text GLabel 7400 3200 2    50   Input ~ 0
-LEFT
+DOWN
 Text GLabel 7400 3300 2    50   Input ~ 0
+LEFT
+Text GLabel 7400 3400 2    50   Input ~ 0
 RIGHT
 Text GLabel 7400 1900 2    50   Input ~ 0
 BTN_A
@@ -134,7 +134,7 @@ Wire Wire Line
 	1950 7050 2050 7050
 Text GLabel 2150 6950 2    50   Input ~ 0
 SND
-Text GLabel 7400 3400 2    50   Input ~ 0
+Text GLabel 7400 3000 2    50   Input ~ 0
 SND
 Wire Wire Line
 	5800 4150 5800 4300
