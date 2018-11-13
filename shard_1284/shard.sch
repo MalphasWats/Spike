@@ -15,22 +15,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_02x10_Odd_Even J0
-U 1 1 5BE693B2
-P 6100 3200
-F 0 "J0" H 6150 3817 50  0000 C CNN
-F 1 "Shard" H 6150 3726 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 6100 3200 50  0001 C CNN
-F 3 "~" H 6100 3200 50  0001 C CNN
-	1    6100 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C0
 U 1 1 5BE6947B
 P 7800 3050
 F 0 "C0" H 7915 3096 50  0000 L CNN
-F 1 "C" H 7915 3005 50  0000 L CNN
+F 1 "104" H 7915 3005 50  0000 L CNN
 F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 7838 2900 50  0001 C CNN
 F 3 "~" H 7800 3050 50  0001 C CNN
 	1    7800 3050
@@ -39,23 +28,23 @@ $EndComp
 $Comp
 L power:+3.3V #PWR0101
 U 1 1 5BE699E5
-P 5750 2750
-F 0 "#PWR0101" H 5750 2600 50  0001 C CNN
-F 1 "+3.3V" H 5765 2923 50  0000 C CNN
-F 2 "" H 5750 2750 50  0001 C CNN
-F 3 "" H 5750 2750 50  0001 C CNN
-	1    5750 2750
+P 6300 1800
+F 0 "#PWR0101" H 6300 1650 50  0001 C CNN
+F 1 "+3.3V" H 6315 1973 50  0000 C CNN
+F 2 "" H 6300 1800 50  0001 C CNN
+F 3 "" H 6300 1800 50  0001 C CNN
+	1    6300 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5BE69B29
-P 5750 3700
-F 0 "#PWR0102" H 5750 3450 50  0001 C CNN
-F 1 "GND" H 5755 3527 50  0000 C CNN
-F 2 "" H 5750 3700 50  0001 C CNN
-F 3 "" H 5750 3700 50  0001 C CNN
-	1    5750 3700
+P 6300 3800
+F 0 "#PWR0102" H 6300 3550 50  0001 C CNN
+F 1 "GND" H 6305 3627 50  0000 C CNN
+F 2 "" H 6300 3800 50  0001 C CNN
+F 3 "" H 6300 3800 50  0001 C CNN
+	1    6300 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -69,64 +58,34 @@ F 3 "" H 7800 3350 50  0001 C CNN
 	1    7800 3350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5750 2750 5750 2800
-Wire Wire Line
-	5750 2800 5900 2800
-Text GLabel 6550 3100 2    50   Input ~ 0
+Text GLabel 6300 2750 2    50   Input ~ 0
 D_CS
-Text GLabel 6550 3200 2    50   Input ~ 0
+Text GLabel 6300 2850 2    50   Input ~ 0
 D_DC
-Text GLabel 6550 3300 2    50   Input ~ 0
+Text GLabel 6300 2950 2    50   Input ~ 0
 D_RST
-Text GLabel 6550 3400 2    50   Input ~ 0
+Text GLabel 6300 3050 2    50   Input ~ 0
 D_MOSI
-Text GLabel 6550 3500 2    50   Input ~ 0
+Text GLabel 6300 3150 2    50   Input ~ 0
 D_SCK
-Wire Wire Line
-	6400 2900 6550 2900
-Wire Wire Line
-	6400 3000 6550 3000
-Wire Wire Line
-	6400 3100 6550 3100
-Wire Wire Line
-	6400 3200 6550 3200
-Text GLabel 5750 3300 0    50   Input ~ 0
+Text GLabel 6300 3350 2    50   Input ~ 0
 UP
-Text GLabel 5750 3600 0    50   Input ~ 0
+Text GLabel 6300 3450 2    50   Input ~ 0
 DOWN
-Text GLabel 5750 3500 0    50   Input ~ 0
+Text GLabel 6300 3550 2    50   Input ~ 0
 LEFT
-Text GLabel 5750 3400 0    50   Input ~ 0
+Text GLabel 6300 3650 2    50   Input ~ 0
 RIGHT
-Text GLabel 6550 3600 2    50   Input ~ 0
+Text GLabel 6300 3250 2    50   Input ~ 0
 SND
-Text GLabel 5750 3200 0    50   Input ~ 0
+Text GLabel 6300 2550 2    50   Input ~ 0
 RESET
-Text GLabel 5750 3100 0    50   Input ~ 0
+Text GLabel 6300 2350 2    50   Input ~ 0
 BTN_C
-Text GLabel 5750 3000 0    50   Input ~ 0
+Text GLabel 6300 2250 2    50   Input ~ 0
 BTN_B
-Text GLabel 5750 2900 0    50   Input ~ 0
+Text GLabel 6300 2150 2    50   Input ~ 0
 BTN_A
-Wire Wire Line
-	5750 2900 5900 2900
-Wire Wire Line
-	5750 3000 5900 3000
-Wire Wire Line
-	5750 3100 5900 3100
-Wire Wire Line
-	5750 3200 5900 3200
-Wire Wire Line
-	5750 3300 5900 3300
-Wire Wire Line
-	5750 3400 5900 3400
-Wire Wire Line
-	5750 3500 5900 3500
-Wire Wire Line
-	5750 3600 5900 3600
-Wire Wire Line
-	5750 3700 5900 3700
 $Comp
 L power:+3.3V #PWR0104
 U 1 1 5BE80463
@@ -142,9 +101,9 @@ Wire Wire Line
 	7800 2750 7800 2900
 Wire Wire Line
 	7800 3200 7800 3350
-Text GLabel 6550 3000 2    50   Input ~ 0
+Text GLabel 6900 2050 2    50   Input ~ 0
 D+
-Text GLabel 6550 2900 2    50   Input ~ 0
+Text GLabel 6900 1950 2    50   Input ~ 0
 D-
 $Comp
 L MCU_Microchip_ATmega:ATmega1284P-AU U1
@@ -179,19 +138,19 @@ F 3 "" H 3400 5600 50  0001 C CNN
 	1    3400 5600
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 3850 2    50   Input ~ 0
-UP
 Text GLabel 4150 4150 2    50   Input ~ 0
-DOWN
+UP
 Text GLabel 4150 4050 2    50   Input ~ 0
-LEFT
+DOWN
 Text GLabel 4150 3950 2    50   Input ~ 0
+LEFT
+Text GLabel 4150 3850 2    50   Input ~ 0
 RIGHT
-Text GLabel 4150 3750 2    50   Input ~ 0
+Text GLabel 4150 3550 2    50   Input ~ 0
 BTN_C
 Text GLabel 4150 3650 2    50   Input ~ 0
 BTN_B
-Text GLabel 4150 3550 2    50   Input ~ 0
+Text GLabel 4150 3750 2    50   Input ~ 0
 BTN_A
 Text GLabel 4150 2750 2    50   Input ~ 0
 D_CS
@@ -310,40 +269,6 @@ Wire Wire Line
 Text GLabel 4150 4950 2    50   Input ~ 0
 SND
 $Comp
-L power:GND #PWR02
-U 1 1 5BEC77E8
-P 6950 2800
-F 0 "#PWR02" H 6950 2550 50  0001 C CNN
-F 1 "GND" H 6955 2627 50  0000 C CNN
-F 2 "" H 6950 2800 50  0001 C CNN
-F 3 "" H 6950 2800 50  0001 C CNN
-	1    6950 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR03
-U 1 1 5BEC7B87
-P 6950 3700
-F 0 "#PWR03" H 6950 3550 50  0001 C CNN
-F 1 "+3.3V" H 6965 3873 50  0000 C CNN
-F 2 "" H 6950 3700 50  0001 C CNN
-F 3 "" H 6950 3700 50  0001 C CNN
-	1    6950 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6400 3700 6950 3700
-Wire Wire Line
-	6400 2800 6950 2800
-Wire Wire Line
-	6400 3300 6550 3300
-Wire Wire Line
-	6400 3400 6550 3400
-Wire Wire Line
-	6550 3500 6400 3500
-Wire Wire Line
-	6400 3600 6550 3600
-$Comp
 L Device:Crystal_Small Y1
 U 1 1 5BECE84F
 P 2500 2050
@@ -417,4 +342,71 @@ Wire Wire Line
 Connection ~ 4050 4550
 Wire Wire Line
 	4050 4450 4050 4550
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J0
+U 1 1 5BEAC9FA
+P 5850 2750
+F 0 "J0" H 5900 3867 50  0000 C CNN
+F 1 "Shard" H 5900 3776 50  0000 C CNN
+F 2 "Custom Footprints:Samtec_MEC8-120-02-L-D-RA1_Edge" H 5850 2750 50  0001 C CNN
+F 3 "~" H 5850 2750 50  0001 C CNN
+	1    5850 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 1850 6300 1850
+Wire Wire Line
+	6300 1850 6300 1800
+Wire Wire Line
+	6300 2150 6150 2150
+Wire Wire Line
+	6150 2250 6300 2250
+Wire Wire Line
+	6300 2350 6150 2350
+Wire Wire Line
+	6150 2550 6300 2550
+Wire Wire Line
+	6300 2750 6150 2750
+Wire Wire Line
+	6150 2850 6300 2850
+Wire Wire Line
+	6300 2950 6150 2950
+Wire Wire Line
+	6150 3050 6300 3050
+Wire Wire Line
+	6300 3150 6150 3150
+Wire Wire Line
+	6150 3250 6300 3250
+Wire Wire Line
+	6300 3350 6150 3350
+Wire Wire Line
+	6150 3450 6300 3450
+Wire Wire Line
+	6300 3550 6150 3550
+Wire Wire Line
+	6150 3650 6300 3650
+Wire Wire Line
+	6150 3750 6300 3750
+Wire Wire Line
+	6300 3750 6300 3800
+$Comp
+L power:GND #PWR?
+U 1 1 5BEC5C1D
+P 6750 2100
+F 0 "#PWR?" H 6750 1850 50  0001 C CNN
+F 1 "GND" H 6755 1927 50  0000 C CNN
+F 2 "" H 6750 2100 50  0001 C CNN
+F 3 "" H 6750 2100 50  0001 C CNN
+	1    6750 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2050 6750 2100
+Wire Wire Line
+	6150 2050 6750 2050
+Wire Wire Line
+	6750 1950 6750 2050
+Wire Wire Line
+	6150 1950 6750 1950
+Connection ~ 6750 2050
 $EndSCHEMATC
