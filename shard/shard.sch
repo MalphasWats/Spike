@@ -47,9 +47,9 @@ F 3 "" H 7800 3350 50  0001 C CNN
 	1    7800 3350
 	1    0    0    -1  
 $EndComp
-Text GLabel 5950 3650 2    50   Input ~ 0
-D_CS
 Text GLabel 5950 3550 2    50   Input ~ 0
+D_CS
+Text GLabel 5950 3650 2    50   Input ~ 0
 D_DC
 Text GLabel 5950 3750 2    50   Input ~ 0
 D_RST
