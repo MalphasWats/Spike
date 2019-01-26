@@ -47,9 +47,9 @@ F 3 "" H 7800 3350 50  0001 C CNN
 	1    7800 3350
 	1    0    0    -1  
 $EndComp
-Text GLabel 6600 3650 2    50   Input ~ 0
+Text GLabel 6500 3550 2    50   Input ~ 0
 D_CS
-Text GLabel 5950 3550 2    50   Input ~ 0
+Text GLabel 5950 3650 2    50   Input ~ 0
 D_DC
 Text GLabel 5950 3750 2    50   Input ~ 0
 D_RST
@@ -373,18 +373,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0110
 U 1 1 5BF13668
-P 6450 3700
-F 0 "#PWR0110" H 6450 3450 50  0001 C CNN
-F 1 "GND" H 6455 3527 50  0000 C CNN
-F 2 "" H 6450 3700 50  0001 C CNN
-F 3 "" H 6450 3700 50  0001 C CNN
-	1    6450 3700
+P 6350 3550
+F 0 "#PWR0110" H 6350 3300 50  0001 C CNN
+F 1 "GND" H 6355 3377 50  0000 C CNN
+F 2 "" H 6350 3550 50  0001 C CNN
+F 3 "" H 6350 3550 50  0001 C CNN
+	1    6350 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5800 3650 6450 3650
-Wire Wire Line
-	6450 3650 6450 3700
 Wire Wire Line
 	5800 2950 5950 2950
 Wire Wire Line
@@ -393,8 +389,6 @@ Wire Wire Line
 	5800 3150 5950 3150
 Wire Wire Line
 	5800 3350 5950 3350
-Wire Wire Line
-	5800 3550 5950 3550
 Wire Wire Line
 	5800 3750 5950 3750
 Wire Wire Line
@@ -415,4 +409,12 @@ Wire Wire Line
 	5800 2650 5950 2650
 Wire Wire Line
 	5950 2650 5950 2600
+Wire Wire Line
+	5800 3650 5950 3650
+Wire Wire Line
+	5800 3550 6350 3550
+Text GLabel 5500 1950 3    50   Input ~ 0
+RESET
+Wire Wire Line
+	5500 1850 5500 1950
 $EndSCHEMATC

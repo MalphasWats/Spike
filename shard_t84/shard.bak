@@ -118,11 +118,11 @@ F 3 "" H 3000 3900 50  0001 C CNN
 $EndComp
 Text GLabel 3750 2500 2    50   Input ~ 0
 UP
-Text GLabel 3750 2200 2    50   Input ~ 0
+Text GLabel 3750 2400 2    50   Input ~ 0
 DOWN
 Text GLabel 3750 2300 2    50   Input ~ 0
 LEFT
-Text GLabel 3750 2400 2    50   Input ~ 0
+Text GLabel 3750 2200 2    50   Input ~ 0
 RIGHT
 Text GLabel 3750 3100 2    50   Input ~ 0
 BTN_C
