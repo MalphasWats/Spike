@@ -17,7 +17,7 @@ button_size = 4;
 
 difference()
 {
-    /*scale([1.02, 1.02])*/ spike();
+    scale([1.02, 1.02]) spike();
     
     
     translate([-15, 6.25]) circle(d=hole_size, $fn=30);
@@ -28,7 +28,7 @@ difference()
     
     translate([25, 1]) minkowski()
     {
-        square([20, 15], center=true);
+        square([22, 15], center=true);
         circle(d=2, center=true, $fn=30);
     }
     
