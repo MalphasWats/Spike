@@ -26,9 +26,9 @@ difference()
     translate([-7.75, -13.25]) circle(d=hole_size, $fn=30);
     translate([57.75, -13.25]) circle(d=hole_size, $fn=30);
     
-    translate([25, 1]) minkowski()
+    translate([25, 0]) minkowski()
     {
-        square([22, 15], center=true);
+        square([25, 17], center=true);
         circle(d=2, center=true, $fn=30);
     }
     
