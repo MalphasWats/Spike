@@ -6,10 +6,10 @@ module button_cap()
     {
         union()
         {
-            cylinder(r=3.8, h=1.2);
-            cylinder(r=2.9, h=5.0);
+            cylinder(r=3.5, h=1.2);
+            cylinder(r=2.1, h=6.0);
         }
-        translate([0, 0, -0.05]) cylinder(r=1.8, h=1.05);
+        translate([0, 0, -0.05]) cylinder(d=4, h=1.15);
     }
 }
 
